@@ -6,6 +6,7 @@
 
 A prototype application that automatically analyzes and summarizes audio conversations (e.g., telesales calls) by leveraging Speaker Diarization and Automatic Speech Recognition (ASR).
 
+My Huggingface https://huggingface.co/Siripat
 ---
 
 ## 🛠️ Key Features
