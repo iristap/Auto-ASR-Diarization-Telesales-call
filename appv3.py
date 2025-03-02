@@ -120,7 +120,7 @@ def preprocess_and_segment_audio(audio_path, segments, output_folder="segmented_
 # Streamlit App
 ###############################
 
-st.title("Diarization + Chat Log + ASR Demo")
+st.title("Demo Auto ASR Diarization Telesales call")
 
 # Step 1. อัพโหลดไฟล์เสียง
 uploaded_file = st.file_uploader("Upload WAV file", type=["wav"])
@@ -204,6 +204,7 @@ if uploaded_file is not None:
         st.markdown(f"**{entry['speaker']}:** {entry['transcript']}")
 
     llm = ChatOllama(model="llama3.2:3b", temperature=0)
+    # llm = ChatOllama(model="deepseek-r1:8b", temperature=0)
   
     # รวมข้อความทั้งหมดจาก aggregated_chat เป็นข้อความเดียว
     full_chat = "\n".join([f"{entry['speaker']}: {entry['transcript']}" for entry in aggregated_chat])
