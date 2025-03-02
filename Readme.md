@@ -57,7 +57,7 @@ HF_Token_Read=YOUR_HUGGINGFACE_TOKEN
 ### 3. Run the Streamlit Application
 
 ```bash
-streamlit run app.py
+streamlit run appv3.py
 ```
 
 Open your browser at the provided URL (`localhost:8501` by default).
